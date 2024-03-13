@@ -111,3 +111,7 @@ resource "azurerm_public_ip" "public_ip" {
   allocation_method   = "Static"
 }
 
+resource "azurerm_network_interface_security_group_association" "my_sg_as" {
+  network_interface_id      = azurerm_network_interface.my_nic.id
+  network_security_group_id = azurerm_network_security_group.example.id
+}
