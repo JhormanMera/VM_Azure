@@ -1,10 +1,10 @@
 variable "name_vm" {
   type        = string
-  description = "Name Function"
+  description = "Unique name for the vm"
 }
 
 variable "location" {
   type        = string
-  default     = "West Europe"
+  default     = "East US"
   description = "Location"
 }
